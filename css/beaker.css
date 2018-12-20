@@ -1,0 +1,108 @@
+
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 270px;
+  width: 248px;
+  margin: -125px 0 0 -125px;
+  overflow: hidden;
+}
+
+#container div { position: absolute; }
+
+#beaker {
+  border: 10px solid #FFF;
+  border-top: 0;
+  border-radius: 0 0 40px 40px;
+  height: 200px;
+  left: 22px;
+  bottom: 10;
+  width: 200px;
+}
+
+#beaker:before,
+#beaker:after {
+  border: 10px solid #FFF;
+  border-bottom: 0;
+  border-radius: 30px 30px 0 0;
+  content: '';
+  height: 30px;
+  position: absolute;
+  top: -40px;
+  width: 50px;
+}
+
+#beaker:before { left: -50px; }
+#beaker:after { right: -50px; }
+
+#liquid {
+  background-color: #3C6;
+  border-radius: 0px 0px 30px 30px;
+  bottom: 0;
+  height: 135px;
+  overflow: hidden;
+  width: 180px;
+  -webkit-animation: spectrum 30s linear infinite;
+  animation: spectrum 30s linear infinite;
+}
+
+#liquid:after {
+  background-color: rgba(255, 255, 255, 0.25);
+  bottom: -10px;
+  content: '';
+  height: 200px;
+  left: -40px;
+  position: absolute;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(15deg);
+  width: 110px;
+}
+/*
+@-webkit-keyframes spectrum {
+  0% {
+    background-color: hsl(0, 60%, 50%);
+    border-color: hsl(0, 60%, 50%);
+  }
+  10% {
+    background-color: hsl(36, 60%, 50%);
+    border-color: hsl(36, 60%, 50%);
+  }
+  20% {
+    background-color: hsl(72, 60%, 50%);
+    border-color: hsl(72, 60%, 50%);
+  }
+  30% {
+    background-color: hsl(108, 60%, 50%);
+    border-color: hsl(108, 60%, 50%);
+  }
+  40% {
+    background-color: hsl(144, 60%, 50%);
+    border-color: hsl(144, 60%, 50%);
+  }
+  50% {
+    background-color: hsl(180, 60%, 50%);
+    border-color: hsl(180, 60%, 50%);
+  }
+  60% {
+    background-color: hsl(216, 60%, 50%);
+    border-color: hsl(216, 60%, 50%);
+  }
+  70% {
+    background-color: hsl(252, 60%, 50%);
+    border-color: hsl(252, 60%, 50%);
+  }
+  80% {
+    background-color: hsl(288, 60%, 50%);
+    border-color: hsl(288, 60%, 50%);
+  }
+  90% {
+    background-color: hsl(324, 60%, 50%);
+    border-color: hsl(324, 60%, 50%);
+  }
+  100% {
+    background-color: hsl(0, 60%, 50%);
+    border-color: hsl(0, 60%, 50%);
+  }
+}
+*/

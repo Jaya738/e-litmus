@@ -1,0 +1,24 @@
+{
+  "name": "e-litmus",
+  "version": "1.0.0",
+  "description": "Balaswecha Project",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaya738/e-litmus.git"
+  },
+  "author": "Tharun Kumar Vardhineni, Jaya Simha Reddy Nandyala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jaya738/e-litmus/issues"
+  },
+  "homepage": "https://github.com/Jaya738/e-litmus#readme",
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  }
+}
